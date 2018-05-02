@@ -1,4 +1,4 @@
-# Login-Page-Bute-Force
+# Login-Page-Brute-Force
 This itself is a complete tool to launch a brute force attack on some website(FOR EDUCATIONAL PURPOSE).
 
 This will not be executable on a windows system.
