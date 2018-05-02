@@ -3,7 +3,7 @@ This itself is a complete tool to launch a brute force attack on some website(FO
 
 This will not be executable on a windows system.
 
-# HOw-TO-RUN 
+# HOW-TO-BEGIN
 Download this repository and unzip it.  
 Make sure that your system has python 2.X as well as python3.X both installed.  
 Change the permitions of the bash file using the command :  
