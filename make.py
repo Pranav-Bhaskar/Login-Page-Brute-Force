@@ -114,7 +114,7 @@ def opt(l):
 	minlen = int(input('Enter the minimum length of a password : '))
 	ch = input('Is the password cAsEsEnSeTiVe (qwerty!=QWERTY) (Y/N) : ')
 	if (ch=='y'or ch=='Y'):
-		calcase(l)
+		#calcase(l)
 				
 	else:
 		calc(l)
