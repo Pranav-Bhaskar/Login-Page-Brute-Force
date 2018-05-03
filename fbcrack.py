@@ -3,7 +3,6 @@
 #This program is for educational purposes only.
 #Don't attack people facebook accounts it's illegal ! 
 #If you want to crack into someone's account, you must have the permission of the user. 
-#Mauritania Attacker is not responsible.
   
   
 import sys
