@@ -68,7 +68,7 @@ def calc(l):
 		num += permu(len(l)-1,x+1)
 	for x in l:
 		t += len(x)*(comb-num)
-	t += comb1
+	t += comb
 	print('Total Number of Combinations : '+str(comb))
 	print('Size in bytes     : '+str(t//temp))
 	temp = 1024*temp
@@ -79,55 +79,25 @@ def calc(l):
 	print('Size in terabites : '+str(t//temp))
 	temp = 1024*temp
 	print('Size in petabites : '+str(t//temp))
-	
-def calcase(l):
-	t = 0 
-	num = 0
-	temp = 1
-	comb = 0
-	alph = 0;
-	fac = math.factorial
-	for x in range(len(l)):
-		comb += permu(len(l),x+1)
-	for x in l:
-		for y in x:
-			alph += 1
-	comb *= (2**alph)
-	#for x in range(len(l)-1):
-	#	num += combi(len(l)-1,x+1) * fac(x+1)
-	#for x in l:
-	#	t += len(x)*(comb-num)
-	#t += comb1
-	print('Total Number of Combinations : '+str(comb))
-	print('Size in bytes     : '+str(t//temp))
-	temp = 1024*temp
-	print('Size in megabites : '+str(t//temp))
-	temp = 1024*temp
-	print('Size in gigabites : '+str(t//temp))
-	temp = 1024*temp
-	print('Size in terabites : '+str(t//temp))
-	temp = 1024*temp
-	print('Size in petabites : '+str(t//temp))
+	print('NOTE : It may be more or less than expected on the baises of MINIMUM LENGTH and CASE SENTIVITY')
 	
 def opt(l):
 	code = randint(10000,100000)
+	calc(l)
 	minlen = int(input('Enter the minimum length of a password : '))
 	ch = input('Is the password cAsEsEnSeTiVe (qwerty!=QWERTY) (Y/N) : ')
 	if (ch=='y'or ch=='Y'):
-		#calcase(l)
-				
+		num = int(input('Are you sure you want to Proceed. If YES enter the number '+str(code)+' : '))
+		if(num == code)and(ch=='y'or ch=='Y'):
+			print('Please Wait Preparing Data')
+			makecase(l,minlen)
+			print('Done')	
 	else:
-		calc(l)
-		
-	num = int(input('Are you sure you want to Proceed. If YES enter the number '+str(code)+' : '))
-	if(num == code)and(ch=='y'or ch=='Y'):
-		print('Please Wait Preparing Data')
-		makecase(l,minlen)
-		print('Done')
-	elif(num == code):
-		print('Please Wait Preparing Data')
-		make(l,minlen)
-		print('Done')
+		num = int(input('Are you sure you want to Proceed. If YES enter the number '+str(code)+' : '))
+		if(num == code):
+			print('Please Wait Preparing Data')
+			make(l,minlen)
+			print('Done')
 l=list(input("Enter the words with ';' in between : ").strip().split(';'))
 print('You Gave '+str(len(l))+' number of words.')
 opt(l)
