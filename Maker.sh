@@ -34,20 +34,13 @@ then
 	echo "|-------------Installing Python 2.X--------------|";
 	echo "+================================================+";
 	echo "";
-	sudo apt install python2
-	sudo apt install python
+	sudo apt install python2.7
 	echo "";
 	echo "+================================================+";
 	echo "|-------------Installing Python 3.X--------------|";
 	echo "+================================================+";
 	echo "";
 	sudo apt install python3
-	echo "";
-	echo "+================================================+";
-	echo "|-----------------UPGRADING PIP------------------|";
-	echo "+================================================+";
-	echo "";
-	pip install pip-upgrade
 	echo "";
 	echo "+================================================+";
 	echo "|---------Installing required libraries----------|";
@@ -64,7 +57,7 @@ python3 make.py;
 echo "+================================================+";
 echo "|--------YOUR WORDLIST HAS BEEN CREATED----------|";
 echo "+================================================+";
-python2 fbcrack.py;
+python2.7 fbcrack.py;
 echo "+================================================+";
 echo "|----------------HAPPY HACKING-------------------|";
 echo "+================================================+";
