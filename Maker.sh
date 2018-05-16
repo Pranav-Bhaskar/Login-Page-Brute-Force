@@ -35,6 +35,7 @@ then
 	echo "+================================================+";
 	echo "";
 	sudo apt install python2
+	sudo apt install python
 	echo "";
 	echo "+================================================+";
 	echo "|-------------Installing Python 3.X--------------|";
@@ -52,7 +53,7 @@ then
 	echo "|---------Installing required libraries----------|";
 	echo "+================================================+";
 	echo "";
-	pip install python-mechanize
+	apt install python-mechanize
 fi
 echo "";
 echo "+================================================+";
