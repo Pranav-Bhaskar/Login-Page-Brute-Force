@@ -34,7 +34,7 @@ then
 	echo "|-------------Installing Python 2.X--------------|";
 	echo "+================================================+";
 	echo "";
-	sudo apt install python
+	sudo apt install python2
 	echo "";
 	echo "+================================================+";
 	echo "|-------------Installing Python 3.X--------------|";
@@ -52,7 +52,7 @@ then
 	echo "|---------Installing required libraries----------|";
 	echo "+================================================+";
 	echo "";
-	pip install mechanize
+	pip install python-mechanize
 fi
 echo "";
 echo "+================================================+";
@@ -63,7 +63,7 @@ python3 make.py;
 echo "+================================================+";
 echo "|--------YOUR WORDLIST HAS BEEN CREATED----------|";
 echo "+================================================+";
-python fbcrack.py;
+python2 fbcrack.py;
 echo "+================================================+";
 echo "|----------------HAPPY HACKING-------------------|";
 echo "+================================================+";
