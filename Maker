@@ -24,6 +24,42 @@ echo "|----------------IMPORTANT NOTE------------------|";
 echo "+================================================+";
 echo "|CHANGING THE CREDITS WILL NOT MAKE YOU THE CODER|";
 echo "+================================================+";
+echo "";
+echo "Is this the FIRST TIME (Y/N) : ";
+read varN
+if [ $varN == 'Y' ] || [ $varN == 'y' ]
+then
+	echo "";
+	echo "+================================================+";
+	echo "|-------------Installing Python 2.X--------------|";
+	echo "+================================================+";
+	echo "";
+	sudo apt install python
+	echo "";
+	echo "+================================================+";
+	echo "|-------------Installing Python 3.X--------------|";
+	echo "+================================================+";
+	echo "";
+	sudo apt install python3
+	echo "";
+	echo "+================================================+";
+	echo "|-----------------UPGRADING PIP------------------|";
+	echo "+================================================+";
+	echo "";
+	pip install pip-upgrade
+	echo "";
+	echo "+================================================+";
+	echo "|---------Installing required libraries----------|";
+	echo "+================================================+";
+	echo "";
+	pip install mechanize
+	pip install 
+fi
+echo "";
+echo "+================================================+";
+echo "|--------YOU CAN NOW BEGIN WITH THE HACK---------|";
+echo "+================================================+";
+echo "";
 python3 make.py;
 echo "+================================================+";
 echo "|--------YOUR WORDLIST HAS BEEN CREATED----------|";
